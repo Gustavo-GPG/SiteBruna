@@ -1,27 +1,28 @@
 import WhatsAppButton from "./WhatsappButton";
-import styles from "../App.module.css"
+import styles from "../App.module.css";
+import LogoSite from "../assets/LogoSite.png"
 
 function Header() {
   return (
-    <div className={styles.header}>
-        <a>
-            <img alt="Logo do Site" />
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    <a>Sobre</a>
-                </li>
-                <li>
-                    <a>Posts</a>
-                </li>
-            </ul>
-        </nav>
-        <WhatsAppButton />
-    </div>
+    <header className={styles.header}>
+      <a href="/">
+        <img src={LogoSite} alt="Logo do Site" className={styles.logo} />
+      </a>
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="/posts">Posts</a>
+          </li>
+        </ul>
+      </nav>
+      <WhatsAppButton />
+    </header>
   );
 }
 

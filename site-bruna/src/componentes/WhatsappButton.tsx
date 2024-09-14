@@ -1,3 +1,5 @@
+import styles from "../App.module.css"
+
 function WhatsAppButton() {
     const phoneNumber = "5534984024098"; // Substitua pelo número do WhatsApp com o código do país
   
@@ -6,7 +8,7 @@ function WhatsAppButton() {
     };
   
     return (
-      <button onClick={handleWhatsAppRedirect}>
+      <button onClick={handleWhatsAppRedirect} className={styles.whatsAppButton}>
         Fale conosco no WhatsApp
       </button>
     );
