@@ -1,6 +1,9 @@
+import WhatsAppButton from "./WhatsappButton";
+import styles from "../App.module.css"
+
 function Header() {
   return (
-    <div>
+    <div className={styles.header}>
         <a>
             <img alt="Logo do Site" />
         </a>
@@ -17,6 +20,7 @@ function Header() {
                 </li>
             </ul>
         </nav>
+        <WhatsAppButton />
     </div>
   );
 }
